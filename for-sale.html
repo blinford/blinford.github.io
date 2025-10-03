@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+    body {
+    position: relative;
+    }
+    .overlay {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      font-family: system-ui, sans-serif;
+    }
+    .overlay span {
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .summary-box {
+      margin: 32px auto 0 auto;
+      max-width: 480px;
+      background: #f7fbe7;
+      border: 1.5px solid #d2e7b1;
+      border-radius: 10px;
+      padding: 18px 24px;
+      font-size: 1.08em;
+      color: #3a4a1b;
+      font-family: system-ui, sans-serif;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+    .listings-container {
+      margin: 40px auto 0 auto;
+      max-width: 480px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      font-family: system-ui, sans-serif;
+    }
+    .listing {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 16px;
+      gap: 18px;
+    }
+    .item-photo {
+      width: 240px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      flex-shrink: 0;
+    }
+    .item-info {
+      max-width: 70%;
+    }
+    .item-title {
+      font-weight: 600;
+      font-size: 1.1em;
+      margin-bottom: 4px;
+    }
+    .item-desc {
+      color: #555;
+      font-size: 0.97em;
+    }
+    .item-price {
+      font-weight: 700;
+      color: #1a8917;
+      font-size: 1.1em;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <span>Selling My Stuff</span>
+  </div>
+  <div class="summary-box">
+    <span>All prices are negotiable. Feel free to reach out with any offer.<br>
+      Text me at: <span style="unicode-bidi:bidi-override; direction: rtl;">3123-703&nbsp;(089)</span>
+    </span>
+  </div>
+  <div class="listings-container">
+    <div class="listing">
+      <img class="item-photo" src="photos/piano.png" alt="Casio CDP-S150 Piano photo">
+      <div class="item-info">
+        <div class="item-title">Casio CDP-S150 Piano</div>
+        <div class="item-desc">Weighted 88-key, comes with stand, pedals, and seat</div>
+      </div>
+      <div class="item-price">$300</div>
+    </div>
+    <div class="listing">
+      <img class="item-photo" src="photos/bedframe.png" alt="Bedframe photo">
+      <div class="item-info">
+        <div class="item-title">Bedframe</div>
+        <div class="item-desc">Queen size, wood, minimalistic style.</div>
+      </div>
+      <div class="item-price">$100</div>
+    </div>
+    <div class="listing">
+      <img class="item-photo" src="photos/desk.png" alt="Desk photo">
+      <div class="item-info">
+        <div class="item-title">Desk and Chair</div>
+        <div class="item-desc">Desk is a bit damaged but still works, chair is in good condition.</div>
+      </div>
+      <div class="item-price">$50</div>
+    </div>
+    <div class="listing">
+      <img class="item-photo" src="photos/trashcan.png" alt="Kohler 47L Step Trash Bin photo">
+      <div class="item-info">
+        <div class="item-title">Kohler 47L Step Trash Bin</div>
+        <div class="item-desc">Stainless steel, soft close</div>
+      </div>
+      <div class="item-price">$80</div>
+    </div>
+    <div class="listing">
+      <img class="item-photo" src="photos/breville.png" alt="Breville Smart Oven Air Fryer Pro photo">
+      <div class="item-info">
+        <div class="item-title">Breville Smart Oven Air Fryer Pro</div>
+        <div class="item-desc">I love this oven, but it's a bit too big and heavy to ship.</div>
+      </div>
+      <div class="item-price">$300</div>
+    </div>
+    <div class="listing">
+      <img class="item-photo" src="photos/svalka.png" alt="Svalka Wine Glasses photo">
+      <div class="item-info">
+        <div class="item-title">Svalka Wine Glasses</div>
+        <div class="item-desc">Set of 6</div>
+      </div>
+      <div class="item-price">Free</div>
+    </div>
+    <div class="listing">
+      <img class="item-photo" src="https://placeholder.com/240x180">
+      <div class="item-info">
+        <div class="item-title">White Mugs</div>
+        <div class="item-desc">Set of Four</div>
+      </div>
+      <div class="item-price">Free</div>
+    </div>
+  </div>
+</body>
+</html>
