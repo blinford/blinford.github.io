@@ -1,114 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>portfolio of ben linford</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      position: relative;
-      overflow-x: hidden;
-      overflow-y: auto;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-    }
-    h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: #22223b;
-      margin-bottom: 1.5rem;
-      letter-spacing: 1px;
-      text-shadow: 0 2px 8px #fff8;
-    }
-    a {
-      display: inline-block;
-      padding: 0.75em 2em;
-      color: black;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: 500;
-      box-shadow: 0 2px 8px #4f8cff33;
-      transition: background 0.2s, transform 0.2s;
-      margin-top: 0.5em;
-    }
-    a:hover, a:focus {
-      background: white;
-      transform: translateY(-2px) scale(1.04);
-    }
-    .overlay {
-      position: relative;
-      z-index: 10;
-      background: white;
-      padding: 2rem 2.5rem;
-      box-shadow: 0 2px 16px #4f8cff22;
-      min-width: 320px;
-      max-width: 90vw;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5em;
-      margin: 3rem 0;
-    }
-    .overlay h1,
-    .overlay h3 {
-      margin-top: 0;
-      margin-bottom: 0.8em;
-    }
-    .overlay a {
-      width: 100%;
-      max-width: 320px;
-    }
-    .canvas-bg {
-      position: fixed;
-      top: 0; left: 0; width: 100vw; height: 100vh;
-      z-index: 1;
-      display: block;
-      pointer-events: none;
-    }
-  </style>
-  <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
-</head>
-<body>
-    <canvas class="glslCanvas canvas-bg" data-fragment-url="shader.frag"></canvas>
-    <div class="overlay">
-        <h1>portfolio of ben linford</h1>
-        <h3>projs</h3>
-        <div style="display: flex; flex-direction: column; align-items: center;">
-            <a href="https://cinethink.io">cinethink</a>
-            <p style="text-align: center;">ai-powered film insights</p>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center;">
-            <a href="https://github.com/blinford/letterboxd-api">letterboxd-api</a>
-            <p style="text-align: center;">java, spring, graalvm, cloud run</p>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center;">
-            <a href="https://github.com/blinford/space-invaders">space-invaders</a>
-            <p style="text-align: center;">godot, shaders</p>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center;">
-            <a href="https://github.com/blinford/MiniJava-Compiler">MiniJava-Compiler</a>
-            <p style="text-align: center;">java, compilers, theory of computation</p>
-        </div>
-        <div style="height: 1.5em;"></div>
-        <h3>messing with shaders</h3>
-        <a href="checkerboard.html">checkerboard slide</a>
-    </div>
-    <script>
-      function resizeCanvas() {
-        const canvas = document.querySelector('.glslCanvas');
-        const dpr = window.devicePixelRatio || 1;
-        canvas.width = window.innerWidth * dpr;
-        canvas.height = window.innerHeight * dpr;
-        canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight + 'px';
-      }
-      window.addEventListener('resize', resizeCanvas);
-      resizeCanvas();
-    </script>
-</body>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Ben Linford</title>
+    </head>
+    <body>
+
+    <h1>Ben Linford</h1>
+        
+    </body>
 </html>
