@@ -69,12 +69,19 @@
             .world-ghost { z-index: 22; left: 650px; top: 420px; }
             .photo-city { z-index: 25; left: 320px; top: 500px; }
             .rhizome { z-index: 10; left: 150px; top: 600px; width: 420px; font-size: 11px; color: var(--text-faint); line-height: 1.7; font-style: italic; }
-            .spacer { height: 900px; }
+            #canvas {
+                position: relative;
+                width: 950px;
+                height: 850px;
+                transform-origin: top left;
+            }
+            .spacer { display: none; }
             .wanderer { z-index: 2; left: 700px; top: 680px; }
         </style>
     </head>
     <body>
 
+        <div id="canvas">
         <div class="piece s1">
             <h1>ben linford</h1>
             <span class="c-mid" style="font-size:14px;">bay area</span>
@@ -191,7 +198,18 @@
             </span>
         </div>
 
-        <div class="spacer"></div>
+        </div>
+
+    <script>
+        function scaleCanvas() {
+            var canvas = document.getElementById('canvas');
+            var scale = window.innerWidth / 950;
+            canvas.style.transform = 'scale(' + scale + ')';
+            document.body.style.height = (850 * scale) + 'px';
+        }
+        scaleCanvas();
+        window.addEventListener('resize', scaleCanvas);
+    </script>
 
     </body>
 </html>
