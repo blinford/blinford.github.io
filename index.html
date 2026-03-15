@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>benl</title>
+        <style>
+            :root {
+                --bg: #3B2A1A;
+                --text: #8C7A66;
+                --text-light: #D4C2AD;
+                --text-bright: #F0E6D8;
+                --text-dim: #7A6B5A;
+                --text-faint: #6B5D4F;
+                --text-ghost: #5A4A38;
+                --accent: #C4956A;
+                --accent-dim: #8B7355;
+                --accent-mid: #9C8B78;
+                --glyph: #4A3928;
+            }
+
+            body {
+                background-color: var(--bg);
+                color: var(--text);
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 10px;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+            a { color: var(--text-light); }
+            a:hover { color: var(--text-bright); }
+
+            .piece { position: absolute; }
+
+            .c-bright { color: var(--text-bright); }
+            .c-light { color: var(--text-light); }
+            .c-mid { color: var(--accent-mid); }
+            .c-accent { color: var(--accent); }
+            .c-accent-dim { color: var(--accent-dim); }
+            .c-dim { color: var(--text-dim); }
+            .c-faint { color: var(--text-faint); }
+            .c-ghost { color: var(--text-ghost); }
+            .c-glyph { color: var(--glyph); }
+
+            .s1 { width: 302px; height: 79px; z-index: 24; left: 40px; top: 15px; }
+            .s1 h1 { font-size: 28px; color: var(--text-bright); margin: 0; font-weight: bold; }
+            .s2 { width: 220px; z-index: 36; left: 320px; top: 10px; }
+            .s2 a { color: var(--accent); font-weight: bold; }
+            .s3 { width: 210px; z-index: 96; left: 50px; top: 90px; font-size: 12px; color: var(--text-light); }
+            .s4 { z-index: 117; left: 240px; top: 80px; }
+            .s4 img { border: 0; }
+            .s5 { width: 170px; z-index: 40; left: 500px; top: 70px; font-size: 11px; }
+            .s5 a { color: var(--accent); font-weight: bold; font-size: 14px; }
+            .s6 { z-index: 42; left: 680px; top: 15px; font-size: 12px; color: var(--text-light); }
+            .s7 { width: 229px; z-index: 43; left: 20px; top: 220px; color: var(--text-light); font-size: 13px; }
+            .s8 { z-index: 44; left: 250px; top: 270px; }
+            .s9 { width: 180px; z-index: 48; left: 530px; top: 210px; font-size: 11px; color: var(--accent-mid); }
+            .s10 { z-index: 50; left: 750px; top: 100px; }
+            .s12 { z-index: 60; left: 80px; top: 370px; font-size: 18px; color: var(--accent-dim); font-weight: bold; }
+            .s14 { z-index: 70; left: 30px; top: 440px; font-size: 12px; color: var(--text-light); }
+            .s15 { z-index: 75; left: 300px; top: 400px; }
+            .s16 { width: 200px; z-index: 80; left: 500px; top: 380px; color: var(--accent); font-size: 16px; font-weight: bold; }
+            .s17 { z-index: 85; left: 750px; top: 330px; font-size: 10px; color: var(--text-faint); }
+            .s19 { z-index: 91; left: 450px; top: 480px; color: var(--accent-mid); font-size: 12px; }
+            .s24 { z-index: 115; left: 40px; top: 750px; font-size: 13px; color: var(--text-bright); }
+            .s25 { z-index: 118; left: 300px; top: 730px; }
+            .photo-gallery { z-index: 30; left: 30px; top: 280px; }
+            .photo-coast { z-index: 20; left: 580px; top: 370px; }
+            .world-ghost { z-index: 22; left: 650px; top: 420px; }
+            .photo-city { z-index: 25; left: 320px; top: 500px; }
+            .rhizome { z-index: 10; left: 150px; top: 600px; width: 420px; font-size: 11px; color: var(--text-faint); line-height: 1.7; font-style: italic; }
+            .spacer { height: 900px; }
+            .wanderer { z-index: 2; left: 700px; top: 680px; }
+        </style>
+    </head>
+    <body>
+
+        <div class="piece s1">
+            <h1>ben linford</h1>
+            <span class="c-mid" style="font-size:14px;">bay area</span>
+        </div>
+
+        <div class="piece s2">
+            <a href="dailies/">dailies&gt;&gt;&gt;</a><br>
+            <span class="c-dim" style="font-size:10px;">mostly just trying to make it more fun to be a better you</span>
+        </div>
+
+        <div class="piece s3">
+            studied computer science<br>
+            and comparative literature<br>
+            at UNC Chapel Hill<br>
+            graduating in 2023
+        </div>
+
+        <div class="piece s4">
+            <img src="the-world.png" width="280" height="220" alt="the world" style="opacity:0.85;">
+        </div>
+
+        <div class="piece s5">
+            <span class="c-accent" style="font-size:14px; font-weight:bold;">repixelization</span><br>
+            <span class="c-mid" style="font-size:10px;">re-pixelization in Godot,<br>overlapping and excessive UIs,<br>in the form of a platformer game</span>
+        </div>
+
+        <div class="piece s6">
+            software engineer<br>
+            life sciences startup<br>
+            <span class="c-accent">2026</span>
+        </div>
+
+        <div class="piece s7">
+            wrote his undergraduate thesis on virtuality in David Lynch's <i>INLAND EMPIRE</i>
+        </div>
+
+        <div class="piece s8">
+            <span class="c-bright" style="font-size:24px; font-weight:bold;">
+                <span class="c-bright">about</span>
+            </span>
+        </div>
+
+        <div class="piece s9">
+            worked at a bank as a<br>
+            "technology analyst"<br>
+            for a couple of years<br><br>
+            <span class="c-dim">building &amp; maintaining data pipelines<br>
+            to automate the bank's<br>
+            regulatory reporting processes</span>
+        </div>
+
+        <div class="piece s10">
+            <span class="c-glyph" style="font-size:48px; font-weight:bold; letter-spacing:-2px;">&#9670;</span>
+        </div>
+
+        <div class="piece photo-gallery">
+            <img src="IMG_2473.jpeg" width="320" height="240" alt="gallery" style="opacity:0.9;">
+        </div>
+
+        <div class="piece s12">
+            <span class="c-accent-dim">tar heel born</span>
+        </div>
+
+        <div class="piece s14">
+            now working at a<br>
+            life sciences startup<br>
+            as a <span class="c-accent">software engineer</span>
+        </div>
+
+        <div class="piece s15">
+            <span class="c-glyph" style="font-size:36px;">&#10038;</span>
+        </div>
+
+        <div class="piece s16">
+            David Lynch<br>
+            <span class="c-mid" style="font-size:11px;"><i>INLAND EMPIRE</i></span>
+        </div>
+
+        <div class="piece s17">
+            virtuality<br>
+            undergraduate thesis<br>
+            comparative literature
+        </div>
+
+        <div class="piece s19">
+            daily challenges spanning<br>
+            creativity, connection,<br>
+            growth, and mindfulness
+        </div>
+
+        <div class="piece photo-coast">
+            <img src="IMG_3231.jpeg" width="300" height="200" alt="coast" style="opacity:0.8;">
+        </div>
+
+        <div class="piece world-ghost">
+            <img src="the-world.png" width="160" height="130" alt="the world" style="opacity:0.5;">
+        </div>
+
+        <div class="piece photo-city">
+            <img src="IMG_3536.jpeg" width="220" height="290" alt="city" style="opacity:0.7;">
+        </div>
+
+        <div class="piece rhizome">
+            the whole description of the burrow functions to trick the enemy. We will enter, then, by any point whatsoever; none matters more than another, and no entrance is more privileged even if it seems an impasse, a tight passage, a siphon. We will be trying only to discover what other points our entrance connects to, what crossroads and galleries one passes through to link two points, what the map of the rhizome is and how the map is modified if one enters by another point
+        </div>
+
+        <div class="piece s24">
+            living in San Francisco
+        </div>
+
+        <div class="piece s25">
+            <span class="c-accent" style="font-size:14px; font-weight:bold;">
+                <a href="dailies/" class="c-accent">explore, and reflect&gt;&gt;&gt;</a>
+            </span>
+        </div>
+
+        <div class="spacer"></div>
+
+    </body>
+</html>
