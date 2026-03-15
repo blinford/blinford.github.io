@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dailies — Daily challenges for a better you</title>
+    <meta name="description" content="Fresh daily challenges spanning creativity, connection, growth, and mindfulness. Complete them, share your experience, and grow with your community.">
+    <meta property="og:title" content="Dailies">
+    <meta property="og:description" content="Daily challenges for a better you">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #FFFAF0;
+            color: #2C2416;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Warm golden glow behind content */
+        .glow {
+            position: fixed;
+            top: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(235,176,38,0.15) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 80px 24px 60px;
+            text-align: center;
+        }
+
+        /* Logo icon */
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 88px;
+            height: 88px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, #EBB026, #F29933);
+            margin-bottom: 32px;
+            box-shadow: 0 8px 32px rgba(235,176,38,0.3);
+        }
+        .logo svg {
+            width: 48px;
+            height: 48px;
+            fill: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #EBB026, #D98C26);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: #7A6840;
+            margin-bottom: 48px;
+            line-height: 1.5;
+        }
+
+        /* Category cards */
+        .categories {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 48px;
+            text-align: left;
+        }
+
+        .category {
+            padding: 20px;
+            background: #FFFDF5;
+            border-radius: 16px;
+            border: 1px solid rgba(235,176,38,0.15);
+            box-shadow: 0 2px 12px rgba(139,109,56,0.06);
+        }
+        .category .emoji {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+        .category h3 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #2C2416;
+            margin-bottom: 4px;
+        }
+        .category p {
+            font-size: 0.8rem;
+            color: #7A6840;
+            line-height: 1.4;
+        }
+
+        /* CTA */
+        .cta {
+            margin-bottom: 16px;
+        }
+
+        .app-store-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #EBB026, #F29933);
+            color: white;
+            text-decoration: none;
+            border-radius: 14px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(235,176,38,0.35);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .app-store-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 28px rgba(235,176,38,0.45);
+        }
+        .app-store-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        .coming-soon {
+            font-size: 0.85rem;
+            color: #A08850;
+            margin-top: 12px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(235,176,38,0.15);
+            font-size: 0.8rem;
+            color: #A08850;
+        }
+
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            body { background: #121224; color: #E8E0D0; }
+            .glow { background: radial-gradient(circle, rgba(250,199,77,0.08) 0%, transparent 70%); }
+            .tagline { color: #A09880; }
+            .category { background: #1A1A30; border-color: rgba(250,199,77,0.1); box-shadow: 0 2px 12px rgba(0,0,8,0.3); }
+            .category h3 { color: #E8E0D0; }
+            .category p { color: #A09880; }
+            .coming-soon { color: #807060; }
+            footer { border-color: rgba(250,199,77,0.1); color: #807060; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 48px 20px 40px; }
+            h1 { font-size: 2.25rem; }
+            .tagline { font-size: 1.05rem; }
+            .categories { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow"></div>
+    <div class="container">
+        <div class="logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+        </div>
+
+        <h1>Dailies</h1>
+        <p class="tagline">Daily challenges for a better you.<br>Create, connect, explore, and reflect.</p>
+
+        <div class="categories">
+            <div class="category">
+                <div class="emoji">&#127912;</div>
+                <h3>Creative & Playful</h3>
+                <p>Invent, draw, photograph, or remix something fun</p>
+            </div>
+            <div class="category">
+                <div class="emoji">&#128156;</div>
+                <h3>Connection & Warmth</h3>
+                <p>Reach out, appreciate, and share kindness</p>
+            </div>
+            <div class="category">
+                <div class="emoji">&#127759;</div>
+                <h3>Exploration & Growth</h3>
+                <p>Step outside your comfort zone and try something new</p>
+            </div>
+            <div class="category">
+                <div class="emoji">&#9728;&#65039;</div>
+                <h3>Mindfulness & Reflection</h3>
+                <p>Slow down, notice, and reflect on what matters</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            <a href="#" class="app-store-btn" id="download-btn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                Download on the App Store
+            </a>
+        </div>
+        <p class="coming-soon">Coming soon to the App Store</p>
+
+        <footer>
+            &copy; 2026 Dailies
+        </footer>
+    </div>
+</body>
+</html>
